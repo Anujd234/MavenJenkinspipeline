@@ -29,13 +29,10 @@ pipeline
         }
     }
 
-    post
-    {
-
-    	always
-    	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'selenium3bymukesh@gmail.com'
-    	}
-
+    post {
+        always {
+          emailext body: 'summary', subject: 'pipelinescript', to: 'anujdeo204@gmail.com'
+        }
+       
     }
 }
